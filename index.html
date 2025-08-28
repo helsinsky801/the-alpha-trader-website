@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awen - Trader & Investor Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Awen</h2>
+                <span>Trader & Investor</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Tentang</a></li>
+                <li class="nav-item"><a href="strategi.html" class="nav-link">Strategi</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="kontak.html" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hai, Saya <span class="highlight">Awen</span></h1>
+                <p>Professional Trader & Seasoned Investor</p>
+                <p class="hero-desc">Membantu Anda memahami dunia trading dan investasi dengan strategi yang terbukti</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="openPopup('kontak-popup')">Konsultasi Gratis</button>
+                    <button class="btn-secondary" onclick="openPopup('strategi-popup')">Lihat Strategi</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="ea59b172-4179-497d-b73c-a1b9749bbf4c.jpg" alt="Awen Trader" class="profile-img">
+                <div class="image-overlay">
+                    <button class="view-more-btn" onclick="openPopup('tentang-popup')">
+                        <i class="fas fa-chart-line"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Overview Section -->
+    <section class="market-overview">
+        <div class="container">
+            <h2>Market Overview</h2>
+            <div class="market-cards">
+                <div class="market-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Stock Market</h3>
+                    <p>Analisis saham dan bukan rekomendasi investasi</p>
+                    <button onclick="openPopup('stock-popup')">Lihat Analisis</button>
+                </div>
+                <div class="market-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Forex</h3>
+                    <p>Trading mata uang dan analisis forex</p>
+                    <button onclick="openPopup('forex-popup')">Lihat Analisis</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popups -->
+    <div id="kontak-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('kontak-popup')">&times;</span>
+            <h3>Konsultasi Gratis</h3>
+            <form class="contact-form">
+                <input type="text" placeholder="Nama Lengkap" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Nomor WhatsApp" required>
+                <select required>
+                    <option value="">Pilih Jenis Konsultasi</option>
+                    <option value="trading">Trading</option>
+                    <option value="investing">Investasi</option>
+                    <option value="portfolio">Review Portfolio</option>
+                </select>
+                <textarea placeholder="Pertanyaan atau Topik Konsultasi" rows="4" required></textarea>
+                <button type="submit">Kirim Permintaan</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="strategi-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('strategi-popup')">&times;</span>
+            <h3>Strategi Trading & Investasi</h3>
+            <div class="strategy-list">
+                <div class="strategy-item">
+                    <h4>📈 Swing Trading</h4>
+                    <p>Strategi jangka menengah dengan risk management ketat</p>
+                </div>
+                <div class="strategy-item">
+                    <h4>💰 Value Investing</h4>
+                    <p>Investasi jangka panjang pada fundamental kuat</p>
+                </div>
+                <div class="strategy-item">
+                    <h4>⚡ Day Trading</h4>
+                    <p>Trading harian dengan analisis teknikal</p>
+                </div>
+            </div>
+            <button class="btn-primary" onclick="window.location.href='strategi.html'">Pelajari Lebih Lanjut</button>
+        </div>
+    </div>
+
+    <div id="tentang-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('tentang-popup')">&times;</span>
+            <h3>Tentang Awen</h3>
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Awen" class="popup-img">
+            <p>Trader dan Investor profesional dengan pengalaman lebih dari 5 tahun di pasar finansial. Spesialis dalam analisis teknikal dan fundamental.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h4>5+</h4>
+                    <p>Tahun Pengalaman</p>
+                </div>
+                <div class="stat">
+                    <h4>1000+</h4>
+                    <p>Klien Terbantu</p>
+                </div>
+                <div class="stat">
+                    <h4>98%</h4>
+                    <p>Kepuasan Klien</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market Analysis Popups -->
+    <div id="stock-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('stock-popup')">&times;</span>
+            <h3>Analisis Stock Market</h3>
+            <img src="SPOT 647,00 ▼ −1.76% Tanpa Nama - Google Chrome 06_08_2025 05_25_56.png" alt="Stock Analysis" class="popup-img">
+            <p>Analisis terkini untuk saham spotify.</p>
+        </div>
+    </div>
+
+    <div id="forex-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('forex-popup')">&times;</span>
+            <h3>Analisis  audusd</h3>
+            <img src="AUDUSD 0,64693 ▲ +0.68% Tanpa Nama - Google Chrome 2025-08-04 00-36-58.mp4" alt="forex Analysis" class="popup-img">
+            <p>akan segera hadir.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="popups.js"></script>
+</body>
+</html>

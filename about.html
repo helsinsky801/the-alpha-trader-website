@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Awen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Awen</h2>
+                <span>Trader & Investor</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link active">Tentang</a></li>
+                <li class="nav-item"><a href="strategi.html" class="nav-link">Strategi</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="kontak.html" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about">
+        <div class="container">
+            <h1>Tentang Awen</h1>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Awen adalah seorang trader dan investor profesional dengan pengalaman lebih dari 5 tahun di pasar finansial. Spesialis dalam analisis teknikal dan fundamental, Awen membantu klien memahami dunia trading dan investasi dengan strategi yang terbukti efektif.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card" onclick="openPopup('pengalaman-popup')">
+                            <h3>5+</h3>
+                            <p>Tahun Pengalaman</p>
+                        </div>
+                        <div class="stat-card" onclick="openPopup('klien-popup')">
+                            <h3>1000+</h3>
+                            <p>Klien Terbantu</p>
+                        </div>
+                        <div class="stat-card" onclick="openPopup('kepuasan-popup')">
+                            <h3>98%</h3>
+                            <p>Kepuasan Klien</p>
+                        </div>
+                    </div>
+
+                    <h2>Visi dan Misi</h2>
+                    <p>Visi Awen adalah untuk memberikan edukasi dan konsultasi yang berkualitas kepada para trader dan investor, serta membantu mereka mencapai tujuan finansial mereka.</p>
+                    
+                    <h2>Keahlian</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Analisis Pasar</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chess"></i>
+                            <span>Strategi Trading</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Manajemen Risiko</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Investasi Jangka Panjang</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" onclick="openPopup('kontak-popup')">Konsultasi Gratis</button>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500&q=80" alt="Awen Professional">
+                    <div class="image-overlay">
+                        <button class="view-more-btn" onclick="openPopup('foto-popup')">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popups for About Page -->
+    <div id="pengalaman-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('pengalaman-popup')">&times;</span>
+            <h3>5+ Tahun Pengalaman</h3>
+            <p>Lebih dari 5 tahun pengalaman di pasar finansial dengan fokus pada analisis teknikal dan fundamental.</p>
+        </div>
+    </div>
+
+    <div id="klien-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('klien-popup')">&times;</span>
+            <h3>1000+ Klien Terbantu</h3>
+            <p>Telah membantu lebih dari 1000 klien dalam mencapai tujuan finansial mereka melalui konsultasi profesional.</p>
+        </div>
+    </div>
+
+    <div id="kepuasan-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('kepuasan-popup')">&times;</span>
+            <h3>98% Kepuasan Klien</h3>
+            <p>Tingkat kepuasan klien yang sangat tinggi dengan hasil yang memuaskan dan pelayanan profesional.</p>
+        </div>
+    </div>
+
+    <div id="foto-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('foto-popup')">&times;</span>
+            <h3>Awen - Professional Trader</h3>
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Awen" class="popup-img">
+            <p>Trader dan Investor profesional dengan spesialisasi dalam analisis pasar finansial.</p>
+        </div>
+    </div>
+
+    <div id="kontak-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('kontak-popup')">&times;</span>
+            <h3>Konsultasi Gratis</h3>
+            <form class="contact-form">
+                <input type="text" placeholder="Nama Lengkap" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Nomor WhatsApp" required>
+                <select required>
+                    <option value="">Pilih Jenis Konsultasi</option>
+                    <option value="trading">Trading</option>
+                    <option value="investing">Investasi</option>
+                    <option value="portfolio">Review Portfolio</option>
+                </select>
+                <textarea placeholder="Pertanyaan atau Topik Konsultasi" rows="4" required></textarea>
+                <button type="submit">Kirim Permintaan</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="popups.js"></script>
+</body>
+</html>
